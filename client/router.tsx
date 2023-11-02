@@ -5,6 +5,10 @@ import {
 } from 'react-router-dom'
 import Home from './components/Home'
 import App from './components/App'
+import Piano from './components/Piano'
+import Guitar from './components/Guitar'
+import Drums from './components/Drums'
+import Michael from './components/Michael'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,6 +16,10 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       {/* <Route path="continent/:name" element={<Continent />} />
       <Route path="continent/:name/:code" element={<Country />} /> */}
+      <Route path="instruments/piano" element={<Piano />} />
+      <Route path="instruments/guitar" element={<Guitar />} />
+      <Route path="instruments/drums" element={<Drums />} />
+      <Route path="instruments/michael" element={<Michael />} />
     </Route>
   )
 )
