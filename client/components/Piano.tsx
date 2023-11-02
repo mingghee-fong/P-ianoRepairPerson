@@ -1,4 +1,5 @@
 import Playing from './Playing'
+import { piano } from '../images'
 
 export default function Piano() {
   return (
@@ -26,8 +27,10 @@ export default function Piano() {
         <div className="key" id="keyG">
           Div G
         </div>
-        <img className="piano" src="../piano.jpg" alt="piano"></img>
+
+        <img className="piano" src={piano} alt="piano" />
         <button className="repair-button">repair button</button>
+
       </div>
     </>
   )
