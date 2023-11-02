@@ -13,3 +13,24 @@ body {
 .center{
   text-align: center;
 }
+
+.key{
+  width: 50px;
+  height: 150px;
+  background-color: white; 
+  border: 3px solid black;
+}
+
+.key-grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 55px);
+  height: 400px; 
+  width: 50%;
+  margin: 0 auto;
+}
+
+#nav-container{
+  position: absolute;
+  width: 150px;
+}
