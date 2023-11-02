@@ -27,7 +27,10 @@ export default function Piano() {
         <div className="key" id="keyG">
           Div G
         </div>
+
         <img className="piano" src={piano} alt="piano" />
+        <button className="repair-button">repair button</button>
+
       </div>
     </>
   )
