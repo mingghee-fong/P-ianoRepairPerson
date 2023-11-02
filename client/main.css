@@ -1,5 +1,9 @@
 body {
   background-color: #faf8f1;
-  color: #0a1520;
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
+  background-image: url(../images/—Pngtree—dark\ studio\ 3d\ rendering\ of_8835978.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
