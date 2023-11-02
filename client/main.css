@@ -34,3 +34,12 @@ body {
   position: absolute;
   width: 150px;
 }
+.piano{
+  position: relative;
+}
+  
+.repair-button{
+  position: relative;
+  width: 150px;
+  height: 80px;
+}

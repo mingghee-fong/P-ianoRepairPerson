@@ -3,7 +3,6 @@ import Playing from './Playing'
 export default function Piano() {
   return (
     <>
-
       <h1>Piano</h1> <Playing instrument="piano" />
       <div className="key-grid">
         <div className="key" id="keyA">
@@ -27,9 +26,9 @@ export default function Piano() {
         <div className="key" id="keyG">
           Div G
         </div>
-        <img src="../images/piano.jpg" alt="piano image"></img>
+        <img className="piano" src="../piano.jpg" alt="piano"></img>
+        <button className="repair-button">repair button</button>
       </div>
-
     </>
   )
 }
