@@ -1,0 +1,7 @@
+export { default as a } from './A.wav'
+export { default as b } from './B.wav'
+export { default as c } from './C.wav'
+export { default as d } from './D.wav'
+export { default as e } from './E.wav'
+export { default as f } from './F.wav'
+export { default as g } from './G.wav'

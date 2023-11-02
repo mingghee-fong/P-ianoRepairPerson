@@ -1,6 +1,10 @@
+import Playing from './Playing'
+
 export default function Piano() {
   return (
     <>
+
+      <h1>Piano</h1> <Playing instrument="piano" />
       <div className="key-grid">
         <div className="key" id="keyA">
           Div A
@@ -25,6 +29,7 @@ export default function Piano() {
         </div>
         <img src="../images/piano.jpg" alt="piano image"></img>
       </div>
+
     </>
   )
 }
