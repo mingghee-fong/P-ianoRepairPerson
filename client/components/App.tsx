@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <div>
-        <h1>App</h1>
-        <p>React development has begun!</p>
+        <h1 class="center">Instrument Picking Page</h1>
+        <p class="center">Pick an instrument!</p>
         <Nav />
         {/* <Home /> */}
         <Outlet />
