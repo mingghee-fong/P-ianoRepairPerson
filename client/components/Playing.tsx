@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { broken } from '../sounds/piano/index'
 import * as piano_sounds from '../sounds/piano/index.ts'
 
 interface Props {
@@ -13,8 +14,11 @@ const sounds = {
 }
 
 const Playing = ({ instrument }: Props) => {
+  const [keypressCount, setKeypressCount] = useState(0)
+  const [isBroken, setIsBroken] = useState(false)
+
   useEffect(() => {
-    const audioElements = {} as Record<string, HTMLAudioElement | undefined>
+    const audioElements: Record<string, HTMLAudioElement | undefined> = {}
 
     // Define a mapping of keys to audio files based on the selected instrument
     const keyAudioMap = sounds[instrument]
@@ -27,35 +31,61 @@ const Playing = ({ instrument }: Props) => {
 
     // Function to play audio on key press
     const playAudio = (key: string) => {
-      const el = audioElements[key]
-      if (el) {
-        el.currentTime = 0
-        el.play()
+      if (!isBroken) {
+        const el = audioElements[key]
+        if (el) {
+          el.currentTime = 0
+          el.play()
+        }
+      }
+    }
+
+    // Function to handle keydown event
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (isBroken) {
+        return // If broken, don't handle keypresses
+      }
+
+      const key = e.key.toLowerCase()
+      if (key in keyAudioMap) {
+        playAudio(key)
+
+        // Increment the keypress count
+        setKeypressCount((count) => count + 1)
+
+        // Check if the "break" condition is met after 10 keypresses
+        if (keypressCount >= 10 && Math.random() < 0.1) {
+          const breakAudio = new Audio(broken)
+          breakAudio.play()
+          setIsBroken(true)
+        }
       }
     }
 
     // Add event listener for key presses
-    document.addEventListener('keydown', (e) => {
-      const key = e.key.toLowerCase()
-      if (key in keyAudioMap) {
-        playAudio(key)
-      }
-    })
+    document.addEventListener('keydown', handleKeydown)
 
     // Cleanup on component unmount
     return () => {
-      document.removeEventListener('keydown', (e) => {
-        const key = e.key.toLowerCase()
-        if (key in keyAudioMap) {
-          playAudio(key)
-        }
-      })
+      document.removeEventListener('keydown', handleKeydown)
     }
-  }, [instrument])
+  }, [instrument, keypressCount, isBroken])
 
   return (
     <div>
-      Press the keys 'a, b, c, d, e, f, g' to play sounds for {instrument}.
+      {isBroken ? (
+        <div>
+          <p>Instrument is broken! Please pay 99¢ to repair it.</p>
+          <button>Repair</button>
+        </div>
+      ) : (
+        <div>
+          <p>
+            Press the keys 'a, b, c, d, e, f, g' to play sounds for {instrument}
+            .
+          </p>
+        </div>
+      )}
     </div>
   )
 }
