@@ -4,7 +4,7 @@ import Piano from './Piano'
 
 function Nav() {
   return (
-    <div>
+    <div id="nav-container">
       <h2>Nav</h2>
       <ul>
         <li>
@@ -19,6 +19,7 @@ function Nav() {
         <li><Link to ={`instruments/michael`}>Michael</Link></li>
       </ul>
     </div>
+    
   )
 }
 
