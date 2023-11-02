@@ -1,3 +1,9 @@
+import Playing from './Playing'
+
 export default function Piano() {
-  return <p>Helloooooooo</p>
+  return (
+    <>
+      <h1>Piano</h1> <Playing instrument="piano" />
+    </>
+  )
 }
