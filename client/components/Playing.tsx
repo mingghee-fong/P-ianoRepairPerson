@@ -8,8 +8,8 @@ interface Props {
 
 const sounds = {
   piano: piano_sounds,
-  drums: piano_sounds,
-  guitar: piano_sounds,
+  // drums: drum_sounds,
+  // guitar: guitar_sounds,
 }
 
 const Playing = ({ instrument }: Props) => {
