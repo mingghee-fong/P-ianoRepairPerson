@@ -35,16 +35,15 @@ body {
   width: 150px;
 }
 
-  
-.repair-button{
+.repair-button {
   position: relative;
   width: 150px;
   height: 80px;
+}
 
 .piano {
   position: relative;
   margin-top: 80px;
   width: 400px;
   height: 300px;
-
 }
