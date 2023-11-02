@@ -14,8 +14,9 @@ function Nav() {
           {' '}
           <Link to={`/instruments/piano`}>Piano</Link>
         </li>
-        <li>Guitar</li>
-        <li>Drums</li>
+        <li><Link to={`/instruments/guitar`}>Guitar</Link></li>
+        <li><Link to={`instruments/drums`}>Drums</Link></li>
+        <li><Link to ={`instruments/michael`}>Michael</Link></li>
       </ul>
     </div>
   )
