@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { broken } from '../sounds/piano/index'
 import * as piano_sounds from '../sounds/piano/index.ts'
+
+import RepCom1 from './RepCom1'
+import RepCom2 from './RepCom2'
+import RepCom3 from './RepCom3'
+
 import * as guitar_sounds from '../sounds/guitar/index.ts'
 import * as drum_sounds from '../sounds/drums/index.ts'
+
 
 interface Props {
   instrument: 'piano' | 'drums' | 'guitar'
