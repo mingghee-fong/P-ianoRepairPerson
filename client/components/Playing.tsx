@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { broken } from '../sounds/piano/index'
 import * as piano_sounds from '../sounds/piano/index.ts'
+import RepCom1 from './RepCom1'
+import RepCom2 from './RepCom2'
+import RepCom3 from './RepCom3'
 
 interface Props {
   instrument: 'piano' | 'drums' | 'guitar'
@@ -80,7 +83,6 @@ const Playing = ({ instrument }: Props) => {
     console.log('Random Number:', randomRepairComponent)
   }
 
-
   return (
     <div>
       {isBroken ? (
@@ -103,12 +105,12 @@ const Playing = ({ instrument }: Props) => {
         </div>
       )}
       {repairComponent !== null && (
-      <div>
-        {repairComponent === 1 && <RepCom1 />}
-        {repairComponent === 2 && <RepCom2 />}
-        {repairComponent === 3 && <RepCom3 />}
-      </div>
-    )}
+        <div>
+          {repairComponent === 1 && <RepCom1 />}
+          {repairComponent === 2 && <RepCom2 />}
+          {repairComponent === 3 && <RepCom3 />}
+        </div>
+      )}
     </div>
   )
 }
