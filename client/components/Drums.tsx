@@ -29,11 +29,8 @@ export default function Drums() {
             Div G
           </div>
 
-
-        <img className="drums" src={drums} alt="drums" />
-       
-
-      
+          <img className="drums" src={drums} alt="drums" />
+        </div>
       </div>
     </>
   )
