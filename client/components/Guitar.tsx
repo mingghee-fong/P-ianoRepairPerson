@@ -1,4 +1,5 @@
 import Playing from './Playing'
+import { guitar } from '../images'
 
 export default function Guitar() {
   return (
@@ -27,7 +28,7 @@ export default function Guitar() {
           Div G
         </div>
 
-        <img className="guitar" src="../images/guitar.jpg" alt="guitar" />
+        <img className="guitar" src={guitar} alt="guitar" />
         <button className="repair-button">repair button</button>
       </div>
     </>
