@@ -47,3 +47,28 @@ body {
   width: 400px;
   height: 300px;
 }
+
+.piano-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.guitar-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.drums-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.michael-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}

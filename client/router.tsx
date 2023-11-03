@@ -13,7 +13,7 @@ import Michael from './components/Michael'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<Home />} />
+  
       {/* <Route path="continent/:name" element={<Continent />} />
       <Route path="continent/:name/:code" element={<Country />} /> */}
       <Route path="instruments/piano" element={<Piano />} />

@@ -3,8 +3,10 @@ import MichaelPlaying from './MichaelPlaying'
 export default function Michael() {
   return (
     <>
-      <p>michael noises</p>
-      <MichaelPlaying />
+      <div className="michael-container">
+        <p>michael noises</p>
+        <MichaelPlaying />
+      </div>
     </>
   )
 }
