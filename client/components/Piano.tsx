@@ -157,7 +157,9 @@ export default function Piano() {
           {/* <img src={memephotos.meme7} alt="Div G" /> */}
         </div>
         <img className="piano" src={piano} alt="piano" />
+
         <button className="repair-button">repair button</button>
+
       </div>
     </>
   )
