@@ -4,7 +4,7 @@ import Piano from './Piano'
 
 function Nav() {
   return (
-    <div id="nav-container">
+    <nav id="nav-container">
       <h2>Nav</h2>
       <ul>
         <li>
@@ -14,12 +14,17 @@ function Nav() {
           {' '}
           <Link to={`/instruments/piano`}>Piano</Link>
         </li>
-        <li><Link to={`/instruments/guitar`}>Guitar</Link></li>
-        <li><Link to={`instruments/drums`}>Drums</Link></li>
-        <li><Link to ={`instruments/michael`}>Michael</Link></li>
+        <li>
+          <Link to={`/instruments/guitar`}>Guitar</Link>
+        </li>
+        <li>
+          <Link to={`instruments/drums`}>Drums</Link>
+        </li>
+        <li>
+          <Link to={`instruments/michael`}>Michael</Link>
+        </li>
       </ul>
-    </div>
-    
+    </nav>
   )
 }
 
