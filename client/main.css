@@ -47,3 +47,10 @@ body {
   width: 400px;
   height: 300px;
 }
+
+.guitar {
+  position: relative;
+  margin-top: 80px;
+  width: 400px;
+  height: 200px;
+}
