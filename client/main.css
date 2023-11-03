@@ -52,6 +52,13 @@ li{
   height: 300px;
 }
 
+.guitar {
+  position: relative;
+  margin-top: 80px;
+  width: 400px;
+  height: 200px;
+}
+
 .piano-container {
   position: relative;
   display: grid;
@@ -76,3 +83,6 @@ li{
   width: 50%;
   margin: 0 auto;
 }
+
+
+

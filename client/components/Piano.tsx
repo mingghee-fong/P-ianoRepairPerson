@@ -90,6 +90,7 @@ export default function Piano() {
 
   return (
     <>
+
       <div className="piano-container">
         <h1>Piano</h1>
         <Playing instrument="piano" />
@@ -158,9 +159,8 @@ export default function Piano() {
             {/* <img src={memephotos.meme7} alt="Div G" /> */}
           </div>
           <img className="piano" src={piano} alt="piano" />
-
         </div>
-      </div>  
+      </div>
     </>
   )
 }
