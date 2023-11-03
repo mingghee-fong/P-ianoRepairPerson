@@ -90,73 +90,76 @@ export default function Piano() {
 
   return (
     <>
-      <h1>Piano</h1>
-      <Playing instrument="piano" />
-      <div className="key-grid">
-        <div
-          className="key"
-          id="keyA"
-          style={{ backgroundColor: isKeyPressed('keyA') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyA')}
-          onMouseUp={() => handleKeyUp('keyA')}
-        >
-          {/* <img src={memephotos.meme1} alt="Div A" /> */}
+
+      <div className="piano-container">
+        <h1>Piano</h1>
+        <Playing instrument="piano" />
+        <div className="key-grid">
+          <div
+            className="key"
+            id="keyA"
+            style={{ backgroundColor: isKeyPressed('keyA') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyA')}
+            onMouseUp={() => handleKeyUp('keyA')}
+          >
+            {/* <img src={memephotos.meme1} alt="Div A" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyB"
+            style={{ backgroundColor: isKeyPressed('keyB') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyB')}
+            onMouseUp={() => handleKeyUp('keyB')}
+          >
+            {/* <img src={memephotos.meme2} alt="Div B" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyC"
+            style={{ backgroundColor: isKeyPressed('keyC') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyC')}
+            onMouseUp={() => handleKeyUp('keyC')}
+          >
+            {/* <img src={memephotos.meme3} alt="Div C" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyD"
+            style={{ backgroundColor: isKeyPressed('keyD') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyD')}
+            onMouseUp={() => handleKeyUp('keyD')}
+          >
+            {/* <img src={memephotos.meme4} alt="Div D" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyE"
+            style={{ backgroundColor: isKeyPressed('keyE') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyE')}
+            onMouseUp={() => handleKeyUp('keyE')}
+          >
+            {/* <img src={memephotos.meme5} alt="Div E" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyF"
+            style={{ backgroundColor: isKeyPressed('keyF') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyF')}
+            onMouseUp={() => handleKeyUp('keyF')}
+          >
+            {/* <img src={memephotos.meme6} alt="Div F" /> */}
+          </div>
+          <div
+            className="key"
+            id="keyG"
+            style={{ backgroundColor: isKeyPressed('keyG') ? 'grey' : 'white' }}
+            onMouseDown={() => handleKeyDown('keyG')}
+            onMouseUp={() => handleKeyUp('keyG')}
+          >
+            {/* <img src={memephotos.meme7} alt="Div G" /> */}
+          </div>
+          <img className="piano" src={piano} alt="piano" />
         </div>
-        <div
-          className="key"
-          id="keyB"
-          style={{ backgroundColor: isKeyPressed('keyB') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyB')}
-          onMouseUp={() => handleKeyUp('keyB')}
-        >
-          {/* <img src={memephotos.meme2} alt="Div B" /> */}
-        </div>
-        <div
-          className="key"
-          id="keyC"
-          style={{ backgroundColor: isKeyPressed('keyC') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyC')}
-          onMouseUp={() => handleKeyUp('keyC')}
-        >
-          {/* <img src={memephotos.meme3} alt="Div C" /> */}
-        </div>
-        <div
-          className="key"
-          id="keyD"
-          style={{ backgroundColor: isKeyPressed('keyD') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyD')}
-          onMouseUp={() => handleKeyUp('keyD')}
-        >
-          {/* <img src={memephotos.meme4} alt="Div D" /> */}
-        </div>
-        <div
-          className="key"
-          id="keyE"
-          style={{ backgroundColor: isKeyPressed('keyE') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyE')}
-          onMouseUp={() => handleKeyUp('keyE')}
-        >
-          {/* <img src={memephotos.meme5} alt="Div E" /> */}
-        </div>
-        <div
-          className="key"
-          id="keyF"
-          style={{ backgroundColor: isKeyPressed('keyF') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyF')}
-          onMouseUp={() => handleKeyUp('keyF')}
-        >
-          {/* <img src={memephotos.meme6} alt="Div F" /> */}
-        </div>
-        <div
-          className="key"
-          id="keyG"
-          style={{ backgroundColor: isKeyPressed('keyG') ? 'grey' : 'white' }}
-          onMouseDown={() => handleKeyDown('keyG')}
-          onMouseUp={() => handleKeyUp('keyG')}
-        >
-          {/* <img src={memephotos.meme7} alt="Div G" /> */}
-        </div>
-        <img className="piano" src={piano} alt="piano" />
       </div>
     </>
   )
