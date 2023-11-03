@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 import { broken } from '../sounds/piano/index'
 import * as piano_sounds from '../sounds/piano/index.ts'
+import * as guitar_sounds from '../sounds/guitar/index.ts'
+import * as drum_sounds from '../sounds/drums/index.ts'
 
 interface Props {
   instrument: 'piano' | 'drums' | 'guitar'
@@ -9,8 +10,8 @@ interface Props {
 
 const sounds = {
   piano: piano_sounds,
-  // drums: drum_sounds,
-  // guitar: guitar_sounds,
+  drums: drum_sounds,
+  guitar: guitar_sounds,
 }
 
 const Playing = ({ instrument }: Props) => {
@@ -80,7 +81,6 @@ const Playing = ({ instrument }: Props) => {
     console.log('Random Number:', randomRepairComponent)
   }
 
-
   return (
     <div>
       {isBroken ? (
@@ -103,12 +103,12 @@ const Playing = ({ instrument }: Props) => {
         </div>
       )}
       {repairComponent !== null && (
-      <div>
-        {repairComponent === 1 && <RepCom1 />}
-        {repairComponent === 2 && <RepCom2 />}
-        {repairComponent === 3 && <RepCom3 />}
-      </div>
-    )}
+        <div>
+          {repairComponent === 1 && <RepCom1 />}
+          {repairComponent === 2 && <RepCom2 />}
+          {repairComponent === 3 && <RepCom3 />}
+        </div>
+      )}
     </div>
   )
 }
