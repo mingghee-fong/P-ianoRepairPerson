@@ -4,6 +4,7 @@ import { michael } from '../images'
 export default function Michael() {
   return (
     <>
+
       <div className="key-grid">
         <div className="key" id="keyA">
           Div A
@@ -29,6 +30,7 @@ export default function Michael() {
       </div>
       <MichaelPlaying />
       <img className="michael" src={michael} alt="michael" />
+
     </>
   )
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div>
-        <h1 class="center">Instrument Picking Page</h1>
+        <h1 class="center">Pete's Music Emporium</h1>
         <p class="center">Pick an instrument!</p>
         <Nav />
         {/* <Home /> */}
