@@ -1,0 +1,7 @@
+export { default as meme1 } from './meme1.png'
+export { default as meme2 } from './meme2.png'
+export { default as meme3 } from './meme3.png'
+export { default as meme4 } from './meme4.png'
+export { default as meme5 } from './meme5.png'
+export { default as meme6 } from './meme6.png'
+export { default as meme7 } from './meme7.png'

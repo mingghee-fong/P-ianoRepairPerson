@@ -16,6 +16,7 @@ const sounds = {
 const Playing = ({ instrument }: Props) => {
   const [keypressCount, setKeypressCount] = useState(0)
   const [isBroken, setIsBroken] = useState(false)
+  const [repairComponent, setRepairComponent] = useState<number | null>(null)
 
   useEffect(() => {
     const audioElements: Record<string, HTMLAudioElement | undefined> = {}
@@ -71,12 +72,27 @@ const Playing = ({ instrument }: Props) => {
     }
   }, [instrument, keypressCount, isBroken])
 
+  // Function to handle the "Repair" button click
+  const handleRepairClick = () => {
+    // Generate a random number between 1 and 3
+    const randomRepairComponent = Math.floor(Math.random() * 3) + 1
+    setRepairComponent(randomRepairComponent)
+    console.log('Random Number:', randomRepairComponent)
+  }
+
+
   return (
     <div>
       {isBroken ? (
         <div>
           <p>Instrument is broken! Please pay 99¢ to repair it.</p>
-          <button>Repair</button>
+          <button
+            id="repair-button"
+            onClick={handleRepairClick}
+            className="repair-button"
+          >
+            Repair
+          </button>
         </div>
       ) : (
         <div>
@@ -86,6 +102,13 @@ const Playing = ({ instrument }: Props) => {
           </p>
         </div>
       )}
+      {repairComponent !== null && (
+      <div>
+        {repairComponent === 1 && <RepCom1 />}
+        {repairComponent === 2 && <RepCom2 />}
+        {repairComponent === 3 && <RepCom3 />}
+      </div>
+    )}
     </div>
   )
 }
