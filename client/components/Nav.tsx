@@ -12,7 +12,7 @@ function Nav() {
         </li>
         <li>
           {' '}
-          <Link to={`/instruments/piano`}>Piano</Link>
+          <Link  to={`/instruments/piano`}>Piano</Link>
         </li>
         <li>
           <Link to={`/instruments/guitar`}>Guitar</Link>

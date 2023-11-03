@@ -13,9 +13,14 @@ body {
 .center {
   text-align: center;
 }
-.a {
 
+
+
+li{
+  list-style: none;
 }
+
+
 .key {
   width: 50px;
   height: 150px;
@@ -49,3 +54,38 @@ body {
   width: 400px;
   height: 300px;
 }
+
+.guitar {
+  position: relative;
+  margin-top: 80px;
+  width: 400px;
+  height: 200px;
+}
+
+.piano-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.guitar-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.drums-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+.michael-container {
+  position: relative;
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
