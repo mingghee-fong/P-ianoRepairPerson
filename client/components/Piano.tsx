@@ -29,7 +29,7 @@ export default function Piano() {
         </div>
 
         <img className="piano" src={piano} alt="piano" />
-        <button className="repair-button">repair button</button>
+        {/* <button className="repair-button">repair button</button> */}
 
       </div>
     </>
