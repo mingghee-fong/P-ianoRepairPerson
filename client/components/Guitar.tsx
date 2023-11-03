@@ -29,9 +29,12 @@ export default function Guitar() {
             Div G
           </div>
 
+        <img className="guitar" src={guitar} alt="guitar" />
+ 
 
-          <img className="guitar" src={guitar} alt="guitar" />
+    
         </div>
+
       </div>
     </>
   )

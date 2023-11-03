@@ -1,4 +1,5 @@
 import Playing from './Playing'
+import { drums } from '../images'
 
 export default function Drums() {
   return (
@@ -28,8 +29,11 @@ export default function Drums() {
             Div G
           </div>
 
-          <img className="drums" src="../images/drums" alt="drums" />
-        </div>
+
+        <img className="drums" src={drums} alt="drums" />
+       
+
+      
       </div>
     </>
   )
