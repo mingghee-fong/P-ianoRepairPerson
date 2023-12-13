@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { broken } from '../sounds/piano/index'
 import * as piano_sounds from '../sounds/piano/index.ts'
 
@@ -8,7 +8,6 @@ import RepCom3 from './RepCom3'
 
 import * as guitar_sounds from '../sounds/guitar/index.ts'
 import * as drum_sounds from '../sounds/drums/index.ts'
-
 
 interface Props {
   instrument: 'piano' | 'drums' | 'guitar'

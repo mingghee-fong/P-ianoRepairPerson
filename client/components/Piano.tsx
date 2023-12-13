@@ -2,40 +2,8 @@ import Playing from './Playing'
 import { piano } from '../images'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import * as memephotos from '../images/meme/index.ts'
 
 export default function Piano() {
-  // return (
-  //   <>
-  //     <h1>Piano</h1> <Playing instrument="piano" />
-  //     <div className="key-grid">
-  //       <div className="key" id="keyA">
-  //         Div A
-  //       </div>
-  //       <div className="key" id="keyB">
-  //         Div B
-  //       </div>
-  //       <div className="key" id="keyC">
-  //         Div C
-  //       </div>
-  //       <div className="key" id="keyD">
-  //         Div D
-  //       </div>
-  //       <div className="key" id="keyE">
-  //         Div E
-  //       </div>
-  //       <div className="key" id="keyF">
-  //         Div F
-  //       </div>
-  //       <div className="key" id="keyG">
-  //         Div G
-  //       </div>
-
-  //       <img className="piano" src={piano} alt="piano" />
-  //       <button className="repair-button">repair button</button>
-  //     </div>
-  //   </>
-  // )
   const [pressedKeys, setPressedKeys] = useState(new Set())
 
   const handleKeyDown = (key) => {
@@ -65,14 +33,14 @@ export default function Piano() {
       g: 'keyG',
     }
 
-    const handleKeyPress = (event) => {
+    const handleKeyPress = (event: any) => {
       const keyPressed = event.key.toLowerCase()
       if (keyMap[keyPressed] && !isKeyPressed(keyMap[keyPressed])) {
         handleKeyDown(keyMap[keyPressed])
       }
     }
 
-    const handleKeyRelease = (event) => {
+    const handleKeyRelease = (event: any) => {
       const keyReleased = event.key.toLowerCase()
       if (keyMap[keyReleased] && isKeyPressed(keyMap[keyReleased])) {
         handleKeyUp(keyMap[keyReleased])
@@ -90,8 +58,6 @@ export default function Piano() {
 
   return (
     <>
-
-
       <div className="piano-container">
         <h1>Piano</h1>
         <Playing instrument="piano" />
@@ -161,7 +127,6 @@ export default function Piano() {
           </div>
           <img className="piano" src={piano} alt="piano" />
         </div>
-
       </div>
     </>
   )

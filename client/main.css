@@ -8,18 +8,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .center {
   text-align: center;
 }
 
-
-
-li{
+li {
   list-style: none;
 }
-
 
 .key {
   width: 50px;
@@ -37,9 +36,21 @@ li{
   margin: 0 auto;
 }
 
-#nav-container {
+#nav-container ul {
   position: absolute;
-  width: 150px;
+  align-self: center;
+  width: fit-content;
+  margin: auto;
+}
+
+#nav-container li {
+  margin: 3em;
+}
+
+#nav-container a {
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 .repair-button {
@@ -56,6 +67,13 @@ li{
 }
 
 .guitar {
+  position: relative;
+  margin-top: 80px;
+  width: 400px;
+  height: 200px;
+}
+
+.drums {
   position: relative;
   margin-top: 80px;
   width: 400px;
@@ -87,5 +105,17 @@ li{
   margin: 0 auto;
 }
 
+.eldenRing {
+  color: #000000;
+  text-decoration: none;
+}
 
+.paypal {
+  color: #000000;
+  text-decoration: none;
+}
 
+.giveUp {
+  color: #000000;
+  text-decoration: none;
+}

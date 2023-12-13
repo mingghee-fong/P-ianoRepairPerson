@@ -1,27 +1,29 @@
 import { Link } from 'react-router-dom'
-import Piano from './Piano'
-// import { data } from '../../data/continents'
 
 function Nav() {
   return (
     <nav id="nav-container">
-      <h2>Nav</h2>
       <ul>
         <li>
-          <Link to={`/`}>Home</Link>
+          <button>
+            <Link to={`/instruments/piano`}>Piano</Link>
+          </button>
         </li>
         <li>
-          {' '}
-          <Link  to={`/instruments/piano`}>Piano</Link>
+          <button>
+            <Link to={`/instruments/guitar`}>Guitar</Link>
+          </button>
+        </li>
+
+        <li>
+          <button>
+            <Link to={`instruments/drums`}>Drums</Link>
+          </button>
         </li>
         <li>
-          <Link to={`/instruments/guitar`}>Guitar</Link>
-        </li>
-        <li>
-          <Link to={`instruments/drums`}>Drums</Link>
-        </li>
-        <li>
-          <Link to={`instruments/michael`}>Michael</Link>
+          <button>
+            <Link to={`instruments/michael`}>Michael</Link>
+          </button>
         </li>
       </ul>
     </nav>
@@ -29,11 +31,3 @@ function Nav() {
 }
 
 export default Nav
-
-{
-  /* {Object.keys(data).map((continent) => (
-          <li key="0">
-            <Link to={`continent/${continent}`}>{continent}</Link>
-          </li>
-        ))} */
-}
